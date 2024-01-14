@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.15)
-set(PROJECT_NAME "dotup_flutter_active_window")
+set(PROJECT_NAME "desktop_active_window_plugin")
 project(${PROJECT_NAME} LANGUAGES CXX)
 
 # This value is used when generating builds using this plugin, so it must
 # not be changed
-set(PLUGIN_NAME "dotup_flutter_active_window_plugin")
+set(PLUGIN_NAME "desktop_active_window_plugin")
 
 add_library(${PLUGIN_NAME} SHARED
   "desktop_active_window_plugin.cpp"
@@ -18,7 +18,7 @@ target_include_directories(${PLUGIN_NAME} INTERFACE
 target_link_libraries(${PLUGIN_NAME} PRIVATE flutter flutter_wrapper_plugin)
 
 # List of absolute paths to libraries that should be bundled with the plugin
-set(dotup_flutter_active_window_bundled_libraries
+set(desktop_active_window_bundled_libraries
   ""
   PARENT_SCOPE
 )
